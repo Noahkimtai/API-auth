@@ -1,0 +1,19 @@
+{
+  "name": "playwright-all",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@playwright/test": "^1.36.2",
+    "luxon": "^3.3.0",
+    "rimraf": "^5.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
