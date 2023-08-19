@@ -13,7 +13,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     //base url to use
-    baseURL: 'http://10.176.18.211:1034',
+    baseURL: 'http://10.176.18.211:1038',
     // storageState: 'authenticationData.json',
     extraHTTPHeaders: {
       // Assuming personal access token available in the environment.
