@@ -2,7 +2,7 @@ const {test, expect } = require('@playwright/test');
 
 // Getting all the system users test
 test('Get all user-groups', async({request})=>{
-    const response = await request.get('/user-groups');
+    const response = await request.get('/user-groups'); //http://10.176.18.211:1038/user-groups?organizationId=2
     expect(response.ok()).toBeTruthy();
     expect(response.status()).toBe(200);
     let responseData = await response.json();

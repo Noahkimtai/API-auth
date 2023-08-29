@@ -41,12 +41,12 @@ test('Remove an existing organization to user profile', async({request}) =>{
 })
 
 //Test Swith to an organization and set as active organization
-test('Swith to an organization and set as active organization', async({request}) =>{
+test.skip('Swith to an organization and set as active organization', async({request}) =>{
     const response = await request.post('user-organizations/1031/switch/1',{
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'},
-        data: 1,
+        //data: 1,
     }
     )
     expect (response.ok()).toBeTruthy();

@@ -1,0 +1,4 @@
+Completed end points
+    user_groups
+    User organizations - http://10.176.18.211:1038/user-organizations/1031/switch/1 returning 500 server error
+    roles
