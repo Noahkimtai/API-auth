@@ -106,7 +106,6 @@ test('Should be able to create and delete a user a user', async({request}) =>{
 // Update the created user using PUT method test
 test('User can be updated using PUT method', async({request}) =>{
     const response = await request.put(`users/${createdUserId}`,{
-   
     Headers: {
         'Content-Type':'application/json',
         'Accept': 'application/json',
@@ -118,8 +117,8 @@ test('User can be updated using PUT method', async({request}) =>{
 test('Delete the created user', async({request}) =>{
     const response = await request.delete(`/users/${createdUserId}`,
     { 'Content-Type': 'application/json'});
-    // let responseData = await response.json()
-    // console.log(responseData)
+    let responseData = await response.json()
+    console.log(responseData)
     expect (response.ok()).toBeTruthy();
     expect (response.status()).toBe(200)
     //check data is deleted by sending a get request.
